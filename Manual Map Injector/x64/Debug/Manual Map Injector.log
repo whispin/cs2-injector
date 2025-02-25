@@ -1,0 +1,28 @@
+﻿  injector.cpp
+C:\Users\H-zz-H\Desktop\desk\H-zz-H Exploits\H-zz-H Cheats\cs2 cheat\Injector\Manual Map Injector\injector.cpp(164,2): warning C4474: "printf": zu viele Argumente für Formatzeichenfolge übergeben
+      C:\Users\H-zz-H\Desktop\desk\H-zz-H Exploits\H-zz-H Cheats\cs2 cheat\Injector\Manual Map Injector\injector.cpp(164,2):
+      Platzhalter und deren Parameter erwarten 0 variadic-Argumente, es wurden aber 1 variadic-Argumente bereitgestellt.
+  
+C:\Users\H-zz-H\Desktop\desk\H-zz-H Exploits\H-zz-H Cheats\cs2 cheat\Injector\Manual Map Injector\injector.cpp(165,2): warning C4474: "printf": zu viele Argumente für Formatzeichenfolge übergeben
+      C:\Users\H-zz-H\Desktop\desk\H-zz-H Exploits\H-zz-H Cheats\cs2 cheat\Injector\Manual Map Injector\injector.cpp(165,2):
+      Platzhalter und deren Parameter erwarten 0 variadic-Argumente, es wurden aber 1 variadic-Argumente bereitgestellt.
+  
+C:\Users\H-zz-H\Desktop\desk\H-zz-H Exploits\H-zz-H Cheats\cs2 cheat\Injector\Manual Map Injector\injector.cpp(166,2): warning C4474: "printf": zu viele Argumente für Formatzeichenfolge übergeben
+      C:\Users\H-zz-H\Desktop\desk\H-zz-H Exploits\H-zz-H Cheats\cs2 cheat\Injector\Manual Map Injector\injector.cpp(166,2):
+      Platzhalter und deren Parameter erwarten 0 variadic-Argumente, es wurden aber 1 variadic-Argumente bereitgestellt.
+  
+C:\Users\H-zz-H\Desktop\desk\H-zz-H Exploits\H-zz-H Cheats\cs2 cheat\Injector\Manual Map Injector\injector.cpp(171,2): warning C4474: "printf": zu viele Argumente für Formatzeichenfolge übergeben
+      C:\Users\H-zz-H\Desktop\desk\H-zz-H Exploits\H-zz-H Cheats\cs2 cheat\Injector\Manual Map Injector\injector.cpp(171,2):
+      Platzhalter und deren Parameter erwarten 0 variadic-Argumente, es wurden aber 1 variadic-Argumente bereitgestellt.
+  
+C:\Users\H-zz-H\Desktop\desk\H-zz-H Exploits\H-zz-H Cheats\cs2 cheat\Injector\Manual Map Injector\injector.cpp(172,2): warning C4474: "printf": zu viele Argumente für Formatzeichenfolge übergeben
+      C:\Users\H-zz-H\Desktop\desk\H-zz-H Exploits\H-zz-H Cheats\cs2 cheat\Injector\Manual Map Injector\injector.cpp(172,2):
+      Platzhalter und deren Parameter erwarten 0 variadic-Argumente, es wurden aber 1 variadic-Argumente bereitgestellt.
+  
+C:\Users\H-zz-H\Desktop\desk\H-zz-H Exploits\H-zz-H Cheats\cs2 cheat\Injector\Manual Map Injector\injector.cpp(187,2): warning C4474: "printf": zu viele Argumente für Formatzeichenfolge übergeben
+      C:\Users\H-zz-H\Desktop\desk\H-zz-H Exploits\H-zz-H Cheats\cs2 cheat\Injector\Manual Map Injector\injector.cpp(187,2):
+      Platzhalter und deren Parameter erwarten 0 variadic-Argumente, es wurden aber 1 variadic-Argumente bereitgestellt.
+  
+  main.cpp
+  Code wird generiert...
+  Manual Map Injector.vcxproj -> C:\Users\H-zz-H\Desktop\desk\H-zz-H Exploits\H-zz-H Cheats\cs2 cheat\Injector\x64\Debug\Injector-x64.exe
