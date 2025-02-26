@@ -19,7 +19,7 @@ jobs:
     - uses: actions/checkout@v2
       with:
         repository: danielkrupinski/Osiris
-        path: D:\a\Osiris  
+        path: Osiris  
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v2
     - name: Set toolset
@@ -27,16 +27,20 @@ jobs:
       run: echo "toolset=/p:PlatformToolset=${{ matrix.toolset }}" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
     - name: Build Osiris.dll
       shell: cmd
-      run: msbuild D:\a\Osiris\Osiris.sln /p:Platform=x64 /p:Configuration=${{ matrix.configuration }} ${{ env.toolset }} /p:OutDir=D:\a\Osiris\output\
+      run: msbuild D:\a\cs2-injector\cs2-injector\Osiris\Osiris.sln /p:Platform=x64 /p:Configuration=${{ matrix.configuration }} ${{ env.toolset }} /p:OutDir=D:\a\cs2-injector\cs2-injector\
     - name: show build result
       shell: cmd
-      run: dir D:\a\Osiris\output\
+      run: dir D:\a\cs2-injector\cs2-injector\
+    - name: Remove the original folder
+      run: |
+          # PowerShell command to remove original folder and its contents
+          Remove-Item -Path "D:\a\cs2-injector\cs2-injector\Osiris" -Recurse -Force
     - name: build inject.exe
       shell: cmd
-      run: msbuild Manual Map Injector.sln /p:Platform=x64 /p:Configuration=Release ${{ env.toolset }} /p:OutDir=D:\a\Osiris\output\
+      run: msbuild Manual Map Injector.sln /p:Platform=x64 /p:Configuration=Release ${{ env.toolset }} /p:OutDir=D:\a\cs2-injector\cs2-injector\
     - name: Commit  files
       run: |
-        cd D:\a\Osiris\output\
+        cd D:\a\cs2-injector\cs2-injector\
         git config --global user.email AutoupdateRobot@email.com
         git config --global user.name whispin
         git add .
