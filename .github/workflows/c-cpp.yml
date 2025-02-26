@@ -33,7 +33,7 @@ jobs:
       run: dir D:\a\cs2-injector\cs2-injector\Osiris\output\
     - name: build inject.exe
       shell: cmd
-      run: msbuild Manual Map Injector.sln /p:Platform=x64 /p:Configuration=Release ${{ env.toolset }} /p:OutDir=D:\a\cs2-injector\cs2-injector\Osiris\output\
+      run: msbuild Manual Map Injector.sln /p:Platform=x64 /p:Configuration=Release ${{ env.toolset }} 
     - name: Commit  files
       run: |
         cd D:\a\cs2-injector\cs2-injector\Osiris\output\
