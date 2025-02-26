@@ -37,7 +37,7 @@ jobs:
           Remove-Item -Path "D:\a\cs2-injector\cs2-injector\Osiris" -Recurse -Force
     - name: build inject.exe
       shell: cmd
-      run: msbuild  Injector.sln /p:Platform=x64 /p:Configuration=Release ${{ env.toolset }} /p:OutDir=D:\a\cs2-injector\cs2-injector\
+      run: msbuild  "Manual Map Injector.sln" /p:Platform=x64 /p:Configuration=Release ${{ env.toolset }} /p:OutDir=D:\a\cs2-injector\cs2-injector\
     - name: Commit  files
       run: |
         cd D:\a\cs2-injector\cs2-injector\
