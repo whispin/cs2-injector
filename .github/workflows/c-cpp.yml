@@ -27,16 +27,16 @@ jobs:
       run: echo "toolset=/p:PlatformToolset=${{ matrix.toolset }}" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
     - name: Build Osiris.dll
       shell: cmd
-      run: msbuild D:\a\MemJect\MemJect\Osiris\Osiris.sln /p:Platform=x64 /p:Configuration=${{ matrix.configuration }} ${{ env.toolset }} /p:OutDir=D:\a\MemJect\MemJect\Osiris\
+      run: msbuild D:\a\cs2-injector\cs2-injector\Osiris\Osiris.sln /p:Platform=x64 /p:Configuration=${{ matrix.configuration }} ${{ env.toolset }} /p:OutDir=D:\a\cs2-injector\cs2-injector\Osiris\output\
     - name: show build result
       shell: cmd
-      run: dir D:\a\MemJect\MemJect\Osiris\
+      run: dir D:\a\cs2-injector\cs2-injector\Osiris\output\
     - name: build inject.exe
       shell: cmd
-      run: msbuild Manual Map Injector.sln /p:Platform=x64 /p:Configuration=Release ${{ env.toolset }} /p:OutDir=D:\a\inject\
+      run: msbuild Manual Map Injector.sln /p:Platform=x64 /p:Configuration=Release ${{ env.toolset }} /p:OutDir=D:\a\cs2-injector\cs2-injector\Osiris\output\
     - name: Commit  files
       run: |
-        cd D:\a\inject\
+        cd D:\a\cs2-injector\cs2-injector\Osiris\output\
         git config --global user.email AutoupdateRobot@email.com
         git config --global user.name whispin
         git add .
