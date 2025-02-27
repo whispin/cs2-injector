@@ -40,7 +40,7 @@ jobs:
     #   run: msbuild  D:\a\cs2-injector\cs2-injector\Manual_Map_Injector.sln /p:Platform=x64 /p:Configuration=Release ${{ env.toolset }} /p:OutDir=D:\a\cs2-injector\cs2-injector\
     - name: Commit  files
       run: |
-        cd D:\a\cs2-injector\
+        cd .\cs2-injector\
         git config --global user.email AutoupdateRobot@email.com
         git config --global user.name whispin
         git add .
